@@ -1,12 +1,211 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="#" alt="Логотип Погнали">
+      </a>
+      <h1 class="main-header__title">В путешествие вместе с крутыми попутчиками!</h1>
+      <nav class="main-header__navigation visually-hidden">
+        <ul class="main-header__menu menu-list">
+          <li class="menu-list__item">
+            <a href="#">О сервисе</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#">Направления</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-header__open-menu">
+      </div>
+      <ul class="main-header__menu-user menu-user">
+        <li class="menu-user__item">
+          <a class="menu-user__phone" href="#">Phone</a>
+        </li>
+        <li class="menu-user__item">
+          <a class="menu-user__email" href="#">Email</a>
+        </li>
+        <li class="menu-user__item">
+          <a class="menu-user__authorization" href="#">Авторизация</a>
+        </li>
+      </ul>
+      <div class="main-header__quote">
+        <q>«Лучшее приложение, что я видел в жизни!»</q>
+        <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="about-service">
+        <h2 class="about-service__title">О сервисе</h2>
+        <p class="about-service__description">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        </p>
+        <p class="about-service__slogan">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+        </p>
+        <ul class="about-service__menu service-menu">
+          <li class="service-menu__item">
+            <a href="#">Выберите направление</a>
+          </li>
+          <li class="service-menu__item">
+            <a href="#">Изучите идеи путешественников</a>
+          </li>
+          <li class="service-menu__item">
+            <a href="#">Находите тех, кто похож на вас</a>
+          </li>
+          <li class="service-menu__item">
+            <a href="#">Путешействуйте вместе!</a>
+          </li>
+        </ul>
+      </section>
+      <section class="routes-countries">
+        <h2 class="routes-countries__title">Направления</h2>
+        <p class="router-countries__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <ul class="routers-countries__list countries-list">
+          <li class="countries-list__item">
+            <article class="card-country">
+            <h3 class="card-country__title">Тайланд</h3>
+            <p class="card-country__slogan">Джунгли зовут!</p>
+            <p class="card-country__count-views">18321</p>
+            </article>
+          </li>
+          <li class="countries-list__item">
+            <article class="card-country">
+            <h3 class="card-country__title">Франция</h3>
+            <p class="card-country__slogan">Трэ бьен, манифик!</p>
+            <p class="card-country__count-views">12518</p>
+            </article>
+          </li>
+          <li class="countries-list__item">
+            <article class="card-country">
+            <h3 class="card-country__title">Чехия</h3>
+            <p class="card-country__slogan">Закоулки старой Европы</p>
+            <p class="card-country__count-views">5326</p>
+            </article>
+          </li>
+        </ul>
+        <button class="routers-countries__show-all">Показать все</button>
+      </section>
+      <section class="fellow-travelers">
+        <h2 class="fellow-travelers__title">Попутчики</h2>
+        <p class="fellow-travelers__description">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p class="fellow-travelers__slogan">Теперь можно легко найти единомышленников!</p>
+        <ul class="fellow-travelers__list travelers-list">
+          <li class="travelers-list__item">
+            <article class="card-traveler">
+              <img class="card-traveler__photo" alt="Фото попутчика">
+              <p class="card-traveler__name">Таня Фирсова</p>
+              <p class="card-traveler__level">99 level</p>
+              <ul class="card-traveler__countries traveler-countries">
+                <li class="traveler-countries__item">Country1</li>
+                <li class="traveler-countries__item">Country2</li>
+                <li class="traveler-countries__item">Country3</li>
+              </ul>
+              <p class="card-traveler__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <ul class="card-traveler__type-transport type-transport">
+                <li class="type-transport__item">fly</li>
+                <li class="type-transport__item">auto</li>
+                <li class="type-transport__item">bike</li>
+                <li class="type-transport__item">walk</li>
+              </ul>
+            </article>
+          </li>
+          <li class="travelers-list__item">
+            <article class="card-traveler">
+              <img class="card-traveler__photo" alt="Фото попутчика">
+              <p class="card-traveler__name">Петя Демин</p>
+              <p class="card-traveler__level">80 level</p>
+              <ul class="card-traveler__countries traveler-countries">
+                <li class="traveler-countries__item">Country1</li>
+                <li class="traveler-countries__item">Country2</li>
+                <li class="traveler-countries__item">Country3</li>
+              </ul>
+              <p class="card-traveler__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+              <ul class="card-traveler__type-transport type-transport">
+                <li class="type-transport__item">fly</li>
+                <li class="type-transport__item">auto</li>
+                <li class="type-transport__item">bike</li>
+                <li class="type-transport__item">walk</li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+        <button class="fellow-traveler__show-all">Показать всех</button>
+      </section>
+      <section class="add-profile">
+        <h2 class="add-profile__title">Добавьте свой профиль</h2>
+        <img class="add-profile__photo">
+        <ul class="add-profile__price-list price-list">
+          <li class="price-list__item">
+            <p class="price-list__description">Базовое размещение</p>
+            <p class="price-list__cost">Бесплатно</p>
+          </li>
+          <li class="price-list__item">
+            <p class="price-list__description">Вывод на первых позициях</p>
+            <p class="price-list__cost">99 руб/мес</p>
+          </li>
+          <li class="price-list__item">
+            <p class="price-list__description">Кастомный цвет карточки</p>
+            <p class="price-list__cost">59 руб/мес</p>
+          </li>
+        </ul>
+        <button class="add-profile__tariff">Показать тарифы для бизнеса</button>
+      </section>
+      <section clas="about-company">
+        <div class="about-company__contact-info">
+          <p class="about-company__title">Заинтересовались?</p>
+          <p class="about-company__description">
+            Зарегистрируйтесь,это быстро и бесплатно! Уже зарегистрированы? Тогда
+            скорее <a class="about-company__authorization" href="#">авторизуйтесь</a>.
+          </p>
+          <form class="about-company__feedback-email feedback-email" action="#" method="post">
+            <input class="feedback-email__email" type="email" placeholder="E-mail">
+            <input class="feedback-email__submit" type="submit">
+          </form>
+          <p class="about-company__questions"> Остались вопросы? Мы с радостью на них ответим!
+          </p>
+          <p class="about-company__phone"> 8 800 555-86-28 </p>
+          <p class="about-company__email">mail@htmlacademy.ru</p>
+        </div>
+        <div class="about-company__address">
+          <p class="about-company__address-full"> ул. Большая Конюшенная, 19/8</p>
+          <button class="about-company__get-route">Проложить маршрут</button>
+        </div>
+        <div class="about-company__map">
+          <img class="about-company__map-image" alt="Адрес на карте">
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer__logo">
+        <img class="main-footer__logo-image" src="#" alt="Логотип Погнали">
+      </a>
+      <nav class="main-footer__navigation social-links">
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="social-links__telegram" href="#">Telegram</a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__vk" href="#">VK</a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__youtube" href="#">Youtube</a>
+          </li>
+        </ul>
+        <div class="main-footer__developer">
+          <p class="main-footer__developer-text">Разработано</p>
+          <a class="main-footer__developer-link">HTML academy</a>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
